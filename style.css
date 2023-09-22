@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #080808;
+    color: #fff;
+
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("https://img.freepik.com/premium-photo/portrait-beautiful-young-woman-with-long-hair-black-background_893012-76080.jpg"); */
+    background-image: url("./girlimage");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 15px;
+    margin-top: -9px;
+
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: fixed;
+    padding: 5px;
+
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+
+}
+
+.header-text h1 {
+    margin: 20px;
+    font-size: 60px;
+
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+
+/* ------------ABOUT----------- */
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    flex: 2;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    flex: 1;
+    padding: 0 20px; 
+    
+
+}
+
+.sub-tittle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    flex: 1;
+}
+.tab-tittles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-content{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-content ul li span{
+    color: #ff004f;
+    font-size: 14px;
+
+}
+.tab-content{
+    display: none;
+}
+.tab-content.actice-tab{
+    display: block;
+}
+
+/* ===================contact me =================== */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+} */
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #FF0000;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ======= skills ====  */
+.containerskills{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF0000;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name {
+    color: #FF0000;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #333;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #FF0000;
+    transition: width 1s;
+}
+
+/* Define skill-specific width values here */
+.html .progress { width: 80%; }
+.css .progress { width: 75%; }
+.javascript .progress { width: 70%; }
+.react .progress { width: 65%; }
