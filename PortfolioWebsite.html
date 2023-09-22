@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Nlogoo.png" class="logo">
+                <ul>
+                    <li><a href="#" onclick="scrollToSection('header')">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>MERN STACK DEVELOPER</p>
+                <h1>HI! I'm <span>Nirma </span> Abro <br>from Pakistan</h1>
+
+                <!-- =======================ABOUT SECTION ===================  -->
+            </div>
+            <div id="about">
+                <div class="containers">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="./newbg.jpg" alt="">
+                        </div>
+                        <div id="about-col-2">
+                            <h1 class="sub-tittle">About me</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                                Quisquam facilis similique reprehenderit eveniet, recusandae alias mollitia! <br>
+                            </p>
+                            <div class="tab-tittles">
+                                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-content actice-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Developer</span><br>Web and App Developer</li>
+                                    <li><span>Python Developer</span><br>Developer</li>
+                                    <li><span>App Developer</span><br>Build Andriod /iOS apps</li>
+                                </ul>
+                            </div>
+
+                            <!-- ======Experiance -->
+                            <div class="tab-content" id="experiance">
+                                <ul>
+                                    <li><span>2023</span><br>Web Developer at Interns Pakistn</li>
+                                    <li><span>2023</span><br>Web Developer at Internee.pk</li>
+                                    <li><span>2023 current</span><br>Web Developer at CodSoft</li>
+                                </ul>
+                            </div>
+
+                            <!-- ====Education -->
+                            <div class="tab-content" id="education">
+                                <ul>
+                                    <li><span>2017-2018</span><br>Matriculation</li>
+                                    <li><span>2019-2020</span><br>Intermediate</li>
+                                    <li><span>2021 -2024</span><br>Build Andriod /iOS apps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- skills =======  -->
+            <div class="containerskills">
+                <h1>My Skills</h1>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percentage">5%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+
+            <!-- ==========contact====  -->
+
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="NirmaAbro143@gmail.com">NirmaAbro143@gmail.com</a></p>
+                <p>Phone: +1234567890</p>
+                <p>GitHub: <a href="https://github.com/NirmaAbro" target="_blank">https://github.com/NirmaAbro</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/NirmaAbro"
+                        target="_blank">https://www.linkedin.com/in/NirmaAbro</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100075848754894"
+                        target="_blank">https://www.facebook.com/profile.php?id=100075848754894</a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+
+
+
+</body>
+
+</html>
